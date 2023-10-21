@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import "./variables.scss";
+@import "./ourWorks.scss";
+@import "./aboutUs.scss";
+@import "./contactUs.scss";
+@import "krimskiyBriz.scss";
+@import "../css/infusion.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.navBar_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+}
+
+.cont_logo {
+  display: flex;
+  flex-direction: column;
+  width: 291px;
+  height: 52px;
+  margin: 39px 0;
+  cursor: pointer;
+  .logo_img {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+.menu_cont {
+  display: flex;
+  align-items: center;
+  margin-top: 53px;
+  padding-right: 107px;
+  position: relative;
+  &_menu_icon_container{
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+    width: 40px;
+    img{
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  &_menu_burger{
+    display: none;
+    position: absolute;
+    width: 142px;
+    height: 214px;
+    box-shadow: 0 0 1px 0 rgb(18, 19, 21);
+    bottom: -214px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li{
+        margin-top: 25px;
+        color: $main-title-color !important;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    font-size: 21px;
+    list-style: none;
+    display: flex;
+    margin-bottom: 22px;
+    li {
+      margin-right: 22px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: $main-text-color;
+      }
+    }
+  }
+  .ContactUs_cont {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 16px 28px;
+    color: $main-title-color;
+    a {
+      text-decoration: none;
+      color: $main-title-color;
+    }
+    & img {
+      width: 113px;
+    }
+  }
+}
+
+.main_page_main_section {
+  height: calc(100vh - 134px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1373px;
+  margin: 134px auto 0;
+  &_h1 {
+    font-size: 96px;
+    color: $main-title-color;
+    text-align: center;
+  }
+  &_p {
+    font-size: 35px;
+    color: $main-text-color;
+    margin-top: 60px;
+    border-radius: 15px;
+  }
+  .main_page_main_section_contact_us {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 87px;
+    display: flex;
+    flex-direction: column;
+    button {
+      color: white;
+      background-color: $main-title-color;
+      padding: 8px 24px;
+      border: none;
+      font-family: "Inter", sans-serif;
+      font-size: 21px;
+      cursor: pointer;
+    }
+    .general_button_stiles {
+      margin: 0 auto;
+      width: 161px;
+      display: flex;
+      justify-content: space-around;
+      & > div {
+        background-color: $main-title-color;
+        width: 27px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+.main_page_section_contact_us {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 87px;
+  display: flex;
+  flex-direction: column;
+  button {
+    color: white;
+    background-color: $main-title-color;
+    padding: 8px 24px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  .general_button_stiles {
+    margin: 0 auto;
+    width: 161px;
+    display: flex;
+    justify-content: space-around;
+    & > div {
+      background-color: $main-title-color;
+      width: 27px;
+      height: 4px;
+    }
+  }
+}
+
+// What we do page
+
+.what_we_do_main_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1373px;
+  margin: 0 auto;
+  padding-top: 130px;
+  &_h1 {
+    font-size: 72px;
+    font-family: "Inter", sans-serif;
+    color: $main-title-color;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+  &_main_container {
+    display: flex;
+    justify-content: space-around;
+    .what_we_do_main_section_our_services {
+      width: 604px;
+      ul > li {
+        font-size: 45px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: $main-text-color;
+        margin-left: 60px;
+        width: 604px;
+      }
+    }
+    .what_we_do_main_section_technnologies {
+      & div {
+        padding-bottom: 24px;
+        margin-left: 40px;
+      }
+      p {
+        font-size: 27px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: $main-text-color;
+      }
+      span {
+        font-size: 19px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: $main-red-color;
+        display: inline-block;
+      }
+    }
+    & h3 {
+      font-size: 41px;
+      font-weight: 400;
+      font-family: "Inter", sans-serif;
+      color: $main-text-color;
+      margin-bottom: 41px;
+    }
+  }
+  .what_we_do_main_section_contact_us {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 87px;
+    display: flex;
+    flex-direction: column;
+    button {
+      color: white;
+      background-color: $main-title-color;
+      padding: 8px 24px;
+      border: none;
+      font-family: "Inter", sans-serif;
+      font-size: 21px;
+    }
+    .general_button_stiles {
+      margin: 0 auto;
+      width: 161px;
+      display: flex;
+      justify-content: space-around;
+      & > div {
+        background-color: $main-title-color;
+        width: 27px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px){
+  .main_page_main_section {
+    height: calc(100vh - 104px);
+    width: 1160px;
+    &_h1 {
+      font-size: 80px;
+    }
+    &_p {
+      font-size: 31px;
+      margin-top: 60px;
+    }
+  }
+  .what_we_do_main_section{
+    width: 1160px;
+  }
+}
+
+@media (max-width: 1440px){
+  .cont_logo {
+    width: 292px;
+    height: 52px;
+    margin: 30px 0 30px 0;
+    img {
+      margin-bottom: 8px;
+    }
+  }
+  .menu_cont {
+    margin-top: 47px;
+    padding-right: 90px;
+    ul {
+      font-size: 16px;
+      li {
+        margin-right: 16px;
+      }
+    }
+    .ContactUs_cont {
+      font-size: 16px;
+      margin: 0 0 16px 25px;
+      & img {
+        width: 87px;
+      }
+    }
+  }
+  .main_page_main_section {
+    height: fit-content;
+    width: 90%;
+    margin: 300px auto 40px;
+    &_h1 {
+      font-size: 65px;
+    }
+    &_p {
+      font-size: 25px;
+      margin-top: 60px;
+    }
+  }
+  .what_we_do_main_section{
+      width: 90%;
+      &_h1 {
+        font-size: 65px;
+        margin-bottom: 35px;
+      }
+      &_main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .what_we_do_main_section_our_services {
+          width: 90%;
+          ul > li {
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+            list-style: none;
+          }
+        }
+        .what_we_do_main_section_technnologies {
+          margin-top: 45px;
+          p{
+            font-size: 50px;
+            text-align: center;
+          }
+          span{
+            font-size: 25px;
+            display: block;
+            text-align: center;
+          }
+          & div {
+            padding-bottom: 24px;
+            margin: 0;
+          }
+        }
+        & h3 {
+          font-size: 55px;
+          text-align: center;
+          color: $main-red-color;
+        }
+    }
+  }
+}
+
+@media (max-width: 1025px){
+  .menu_cont {
+    
+    &_menu_icon_container{
+      display: block !important;
+      bottom: 30px;
+      right: 50px;
+    }
+    .menu_cont_main_ul{
+        display: none !important;
+    }
+    .ContactUs_cont {
+      display: none !important;
+    }
+  }
+  .main_page_main_section {
+    height: fit-content;
+    width: 90%;
+    margin: 260px auto 30px;
+    &_h1 {
+      font-size: 45px;
+    }
+    &_p {
+      font-size: 20px;
+      margin-top: 55px;
+    }
+    .main_page_section_contact_us {
+      margin-top: 80px;
+      button {
+        padding: 8px 18px;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  .what_we_do_main_section{
+    width: 90%;
+    &_h1 {
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+    &_main_container {
+      .what_we_do_main_section_our_services {
+        width: 90%;
+        ul > li {
+         font-size: 35px;
+        }
+      }
+      .what_we_do_main_section_technnologies {
+        margin-top: 40px;
+        p{
+          font-size: 35px;
+        }
+        span{
+          font-size: 17px;;
+        }
+        & div {
+          padding-bottom: 24px;
+          margin: 0;
+        }
+      }
+      & h3 {
+        font-size: 45px;
+      }
+  }
+}
+}
+
+@media (max-width: 720px){
+  .navBar_container{
+    .cont_logo{
+      width: 184px;
+      height: 33px;
+      margin: 27px 0;
+    }
+  }
+  .menu_cont{
+    &_menu_icon_container{
+      bottom: 20px;
+      right: 25px;
+      width: 34px;
+    }
+  }
+  .main_page_main_section{
+    margin: 170px auto 25px;
+    width: 76%;
+    text-align: center;
+  }
+  .what_we_do_main_section{
+    &_h1 {
+      font-size: 50px;
+    }
+    &_main_container {
+      .what_we_do_main_section_our_services {
+        ul > li {
+         font-size: 25px;
+        }
+      }
+      .what_we_do_main_section_technnologies {
+        p{
+          font-size: 25px;
+        }
+        span{
+          font-size: 13px;
+        }
+      }
+      & h3 {
+        font-size: 38px;
+        margin-bottom: 10px;
+      }
+  }
+}
+}
+
+@media (max-width: 445px){
+  .navBar_container{
+    .cont_logo{
+      width: 130px;
+      height: 23px;
+      margin: 17px 0;
+    }
+  }
+  .menu_cont{
+    &_menu_burger{
+      width: 100px;
+      height: 130px;
+      bottom: -130px;
+      right: 13px;
+      ul{
+        li{
+          margin: 13px 0 0 0;
+          font-size: 13px;
+        }
+      }
+    }
+    &_menu_icon_container{
+      bottom: 9px;
+      right: 17px;
+      width: 30px;
+    }
+  }
+  .main_page_main_section{
+    margin: 98px auto 0;
+    &_h1 {
+      font-size: 36px;
+    }
+    &_p {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    .main_page_section_contact_us {
+      margin-top: 30px;
+      button {
+        padding: 6px 16px;
+        font-size: 13px;
+        width: 110px;
+      }
+      .general_button_stiles {
+        width: 110px;
+        & > div {
+          background-color: $main-title-color;
+          width: 17px;
+          height: 3px;
+        }
+      }
+    }
+  }
+  .what_we_do_main_section{
+    padding-top: 60px;
+    &_h1 {
+      font-size: 30px;
+    }
+    &_main_container {
+      .what_we_do_main_section_our_services {
+        ul > li {
+         font-size: 18px;
+        }
+      }
+      .what_we_do_main_section_technnologies {
+        div{
+          padding-bottom: 18px;
+        }
+        p{
+          font-size: 18px;
+        }
+        span{
+          font-size: 10px;
+        }
+      }
+      & h3 {
+        font-size: 23px;
+        margin-bottom: 15px;
+      }
+  }
+}
+}

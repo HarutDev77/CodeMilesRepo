@@ -1,0 +1,146 @@
+#section_about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 90px auto;
+}
+#section_about_us .section_about_us_h1 {
+  font-size: 72px;
+  font-family: "Inter", sans-serif;
+  color: #061e5c;
+  text-align: center;
+  font-weight: 400;
+  margin: 134px 0 45px 0;
+}
+#section_about_us .section_about_us_h1_Our_workflow {
+  margin-top: 0;
+}
+#section_about_us > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #626262;
+  line-height: 48px;
+  margin-bottom: 90px;
+}
+#section_about_us .our_workflow_main_container {
+  display: flex;
+  justify-content: space-between;
+}
+#section_about_us .our_workflow_main_container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section_about_us .our_workflow_main_container span {
+  color: #AA0610;
+  font-size: 76px;
+  font-weight: 400;
+}
+#section_about_us .our_workflow_main_container h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+  #section_about_us #section_about_us_h1_Our_workflow {
+    margin-top: 0;
+  }
+  #section_about_us > p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  #section_about_us .section_about_us_h1_Our_workflow {
+    margin-top: 0;
+  }
+  #section_about_us .our_workflow_main_container div {
+    margin-bottom: 20px;
+  }
+  #section_about_us .our_workflow_main_container h4 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1440px) {
+  #section_about_us .section_about_us_h1 {
+    font-size: 60px;
+    margin: 104px 0 45px 0;
+  }
+  #section_about_us > p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #section_about_us .our_workflow_main_container span {
+    font-size: 60px;
+  }
+  #section_about_us .our_workflow_main_container h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1025px) {
+  #section_about_us .section_about_us_h1 {
+    font-size: 55px;
+  }
+  #section_about_us > p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #section_about_us .our_workflow_main_container span {
+    font-size: 50px;
+  }
+  #section_about_us .our_workflow_main_container h4 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 720px) {
+  #section_about_us {
+    margin: 40px auto 0;
+  }
+  #section_about_us .section_about_us_h1 {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  #section_about_us > p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #section_about_us .our_workflow_main_container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #section_about_us .our_workflow_main_container div {
+    width: 24%;
+  }
+  #section_about_us .our_workflow_main_container span {
+    font-size: 40px;
+  }
+  #section_about_us .our_workflow_main_container h4 {
+    font-size: 8px;
+  }
+}
+@media (max-width: 445px) {
+  #section_about_us .section_about_us_h1 {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  #section_about_us > p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 40px;
+  }
+  #section_about_us .our_workflow_main_container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #section_about_us .our_workflow_main_container div {
+    width: 33%;
+  }
+  #section_about_us .our_workflow_main_container span {
+    font-size: 35px;
+  }
+  #section_about_us .our_workflow_main_container h4 {
+    font-size: 7px;
+  }
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

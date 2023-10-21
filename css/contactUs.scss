@@ -1,0 +1,544 @@
+.section_contact_us {
+  width: 90%;
+  margin: 90px auto;
+  padding-top: 35px;
+  &_h2 {
+    font-size: 72px;
+    color: $main-title-color;
+    text-align: center;
+    font-weight: 400;
+    margin: 134px 0 45px 0;
+  }
+  &_main_container {
+    width: 90%;
+    margin: 0 auto;
+    & a {
+      text-decoration: none;
+      color: $main-title-color;
+    }
+    h3 > a {
+      font-weight: 400;
+      font-size: 100px;
+    }
+    & p {
+      margin-bottom: 41px;
+    }
+    p > a {
+      font-size: 52px;
+      font-weight: 400;
+    }
+    & img {
+      width: 60px;
+      height: 60px;
+      margin-right: 18px;
+      cursor: pointer;
+    }
+  }
+  .section_contact_us_button {
+    margin: 87px auto 144px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    button {
+      color: white;
+      background-color: $main-title-color;
+      padding: 8px 0;
+      text-align: center;
+      border: none;
+      font-family: "Inter", sans-serif;
+      font-size: 21px;
+      cursor: pointer;
+    }
+
+    .button_send {
+      width: 119px;
+    }
+
+    .button_leave {
+      width: 213px;
+    }
+
+    .general_button_styles {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      & > div {
+        background-color: $main-title-color;
+        width: 27px;
+        height: 4px;
+      }
+    }
+
+    .general_button_leave {
+      width: 213px;
+    }
+
+    .general_button_send {
+      width: 119px;
+    }
+  }
+  .section_contact_us_form {
+    display: none;
+    width: 90%;
+    margin: 130px auto;
+    img {
+      width: 100%;
+    }
+    &_name_email_container {
+      display: flex;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        width: 95%;
+        margin-right: 15px;
+        input {
+          border: none;
+          height: 71px;
+          font-size: 32px;
+          outline: none;
+          padding: 10px 0;
+        }
+      }
+    }
+    .section_contact_us_form_phone_container {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      margin-top: 95px;
+      padding: 10px 0;
+      input {
+        border: none;
+        height: 75px;
+        font-size: 32px;
+        outline: none;
+        padding: 10px 0;
+      }
+    }
+    .section_contact_us_form_about_your_project_container {
+      display: flex;
+      flex-direction: column;
+      margin: 95px 0;
+      padding: 10px 0;
+      input {
+        border: none;
+        height: 75px;
+        font-size: 32px;
+        outline: none;
+        padding: 10px 0;
+      }
+    }
+    & label {
+      font-size: 32px;
+      color: $main-text-color;
+    }
+  }
+}
+
+.section_contact_us_code_miles_logo_container {
+  padding-bottom: 15px;
+  img {
+    width: 90vw;
+  }
+  h4 {
+    text-align: center;
+    margin-top: 44px;
+    font-weight: 400;
+    font-size: 32px;
+    color: $main-text-color;
+  }
+}
+
+@media (max-width: 1600px) {
+  .section_contact_us {
+    &_main_container {
+      h3 > a {
+        font-size: 95px;
+      }
+      p > a {
+        font-size: 50px;
+      }
+      & img {
+        width: 57px;
+        height: 57px;
+        margin-right: 16px;
+      }
+    }
+    .section_contact_us_form {
+      width: 90%;
+      &_name_email_container {
+        div {
+          input {
+            height: 53px;
+            font-size: 28px;
+          }
+        }
+      }
+      .section_contact_us_form_phone_container {
+        width: 45%;
+        margin-top: 80px;
+        input {
+          height: 53px;
+          font-size: 28px;
+        }
+      }
+      .section_contact_us_form_about_your_project_container {
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0;
+        input {
+          height: 53px;
+          font-size: 28px;
+        }
+      }
+      & label {
+        font-size: 28px;
+      }
+    }
+  }
+  .section_contact_us_code_miles_logo_container {
+    padding-bottom: 10px;
+    h4 {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .section_contact_us {
+    &_main_container {
+      h3 > a {
+        font-size: 85px;
+      }
+      p > a {
+        font-size: 46px;
+      }
+      & img {
+        width: 50px;
+        height: 50px;
+        margin-right: 13px;
+      }
+    }
+    .section_contact_us_form {
+      max-width: 90%;
+      &_name_email_container {
+        div {
+          input {
+            height: 47px;
+            font-size: 24px;
+          }
+        }
+      }
+      .section_contact_us_form_phone_container {
+        width: 45%;
+        margin-top: 70px;
+        input {
+          height: 47px;
+          font-size: 24px;
+        }
+      }
+      .section_contact_us_form_about_your_project_container {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0;
+        input {
+          height: 47px;
+          font-size: 24px;
+        }
+      }
+      & label {
+        font-size: 24px;
+      }
+    }
+  }
+  .section_contact_us_code_miles_logo_container {
+    h4 {
+      font-size: 25px;
+    }
+  }
+  .section_contact_us_code_miles_logo_container {
+    padding-bottom: 10px;
+    h4 {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1025px){
+  .section_contact_us {
+    &_h2 {
+      font-size: 55px;
+      margin: 104px 0 45px 0;
+    }
+    &_main_container {
+      width: 90%;
+      h3 > a {
+        font-size: 50px;
+      }
+      p > a {
+        font-size: 37px;
+      }
+      & img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .section_contact_us_button {
+      margin: 80px auto 104px;
+      button {
+        font-size: 19px;
+      }
+  
+      .button_send {
+        width: 100px;
+      }
+  
+      .button_leave {
+        width: 200px;
+      }
+  
+      .general_button_styles {
+        & > div {
+          background-color: $main-title-color;
+          width: 24px;
+        }
+      }
+  
+      .general_button_leave {
+        width: 200px;
+      }
+  
+      .general_button_send {
+        width: 100px;
+      }
+    }
+    .section_contact_us_form {
+      margin: 170px auto 100px;
+      &_name_email_container {
+        div {
+          input {
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+      }
+      .section_contact_us_form_phone_container {
+        margin-top: 90px;
+        input {
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+      .section_contact_us_form_about_your_project_container {
+        margin: 90px 0;
+        input {
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+      & label {
+        font-size: 20px;
+      }
+    }
+  }
+  
+  .section_contact_us_code_miles_logo_container {
+    h4 {
+      margin-top: 40px;
+      font-size: 20px;
+    }
+  }
+  .section_contact_us_code_miles_logo_container {
+    padding-bottom: 10px;
+    h4 {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 720px){
+  .section_contact_us {
+    margin-top: 0;
+    &_h2 {
+      font-size: 50px;
+      margin: 80px 0 45px 0;
+    }
+    &_main_container {
+      h3 > a {
+        font-size: 30px;
+      }
+      p > a {
+        font-size: 30px;
+      }
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .section_contact_us_button {
+      margin: 80px auto 80px;
+      button {
+        font-size: 16px;
+      }
+  
+      .button_send {
+        width: 75px;
+      }
+  
+      .button_leave {
+        width: 165px;
+      }
+  
+      .general_button_styles {
+        & > div {
+          background-color: $main-title-color;
+          width: 20px;
+        }
+      }
+  
+      .general_button_leave {
+        width: 160px;
+      }
+  
+      .general_button_send {
+        width: 75px;
+      }
+    }
+    .section_contact_us_form {
+      margin: 140px auto 70px;
+      &_name_email_container{
+        flex-direction: column;
+        div{
+          width: 95%;
+        }
+      }
+      &_name_email_container {
+        div {
+          input {
+            height: 40px;
+            font-size: 20px;
+          }
+        }
+      }
+      .section_contact_us_form_phone_container {
+        margin-top: 0;
+        width: 90%;
+      }
+      .section_contact_us_form_about_your_project_container {
+        margin: 0 0 37px 0;
+        width: 90%;
+      }
+    }
+  }
+  
+  .section_contact_us_code_miles_logo_container {
+    h4 {
+      margin-top: 30px;
+      font-size: 10px;
+    }
+  }
+  .section_contact_us_code_miles_logo_container {
+    padding-bottom: 10px;
+    h4 {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 445px){
+  .section_contact_us {
+    margin: 0 auto;
+    padding-top: 0;
+    &_h2 {
+      font-size: 35px;
+      margin: 40px 0 20px 0;
+    }
+    &_main_container {
+      h3 > a {
+        font-size: 20px;
+      }
+      p > a {
+        font-size: 17px;
+      }
+      & img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .section_contact_us_button {
+      margin: 40px auto 40px;
+      button {
+        font-size: 11px;
+        padding: 5px 0;
+      }
+  
+      .button_send {
+        width: 60px;
+      }
+  
+      .button_leave {
+        width: 130px;
+      }
+  
+      .general_button_styles {
+        & > div {
+          background-color: $main-title-color;
+          width: 17px;
+        }
+      }
+  
+      .general_button_leave {
+        width: 130px;
+      }
+  
+      .general_button_send {
+        width: 60px;
+      }
+    }
+    .section_contact_us_form {
+      margin: 40px auto;
+      &_name_email_container{
+        flex-direction: column;
+        div{
+          width: 95%;
+        }
+      }
+      &_name_email_container {
+        div {
+          input {
+            height: 5px;
+            font-size: 12px;
+          }
+        }
+      }
+      .section_contact_us_form_phone_container {
+        margin-top: 0;
+        width: 90%;
+        input{
+          height: 5px;
+          font-size: 12px;
+        }
+      }
+      .section_contact_us_form_about_your_project_container {
+        margin: 0 0 10px 0;
+        width: 90%;
+        input{
+          height: 5px;
+          font-size: 12px;
+        }
+      }
+      label{
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .section_contact_us_code_miles_logo_container {
+    padding-bottom: 5px;
+    h4 {
+      margin-top: 10px;
+      font-size: 10px;
+    }
+  }
+}
