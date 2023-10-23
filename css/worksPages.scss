@@ -21,9 +21,6 @@
     margin-top: 100px;
   }
   &_title_box {
-    &_first {
-      display: flex;
-    }
     h1 {
       font-size: 96px;
       font-weight: 400;
@@ -35,7 +32,7 @@
       font-size: 18px;
       font-weight: 400;
       display: inline-block;
-      margin-top: 71px;
+      margin-top: 10px;
       color: $main-red-color;
     }
     &_Game_development {
@@ -49,6 +46,9 @@
     &_last_container {
       display: flex;
       margin-bottom: 77px;
+      &_technologies_box{
+        flex-wrap: wrap;
+      }
       div {
         display: flex;
         margin: 39px 60px 0 0;
@@ -152,15 +152,12 @@
       font-size: 45px;
     }
     &_title_box {
-      &_first {
-        display: flex;
-      }
       h1 {
         font-size: 82px;
       }
       a {
         font-size: 17px;
-        margin-top: 61px;
+        margin-top: 6px;
       }
       &_Game_development {
         h3 {
@@ -213,7 +210,7 @@
       }
       a {
         font-size: 16px;
-        margin-top: 50px;
+        margin-top: 3px;
       }
       &_Game_development {
         margin-bottom: 30px;
@@ -313,7 +310,7 @@
       }
       a {
         font-size: 14px;
-        margin-top: 37px;
+        margin-top: 0;
       }
       &_Game_development {
         margin-bottom: 30px;
@@ -407,7 +404,7 @@
       }
       a {
         font-size: 11px;
-        margin-top: 22px;
+        margin-top: 0;
       }
       &_Game_development {
         margin-bottom: 20px;
@@ -455,7 +452,7 @@
       }
       .general_button_styles {
         & > div {
-          width: 15px;
+          width: 18px;
           height: 3px;
         }
       }
@@ -463,13 +460,13 @@
         margin-right: 15px;
   
         button {
-          font-size: 9px !important;
-          width: 107px;
+          font-size: 12px !important;
+          width: 130px;
         }
       }
   
       .visit_website {
-        font-size: 9px;
+        font-size: 12px;
       }
   
       a {
@@ -482,7 +479,7 @@
 @media (max-width: 445px){
   .works_main_section {
     width: 300px;
-    margin: 120px auto 0;
+    margin: 100px auto 0;
     .imageWithMargin{
       margin-bottom: 20px;
     }
@@ -495,30 +492,33 @@
     }
     &_title_box {
       h1 {
-        font-size: 20px;
-        margin-right: 10px;
+        font-size: 30px;
       }
       a {
-        font-size: 8px;
-        margin-top: 9px;
+        font-size: 10px;
+        margin-top: 5px;
       }
       &_Game_development {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         h3 {
           font-size: 12px;
         }
       }
       &_last_container {
         margin-bottom: 40px;
+        flex-direction: column;
+        &_technologies_box{
+          margin-top: 0 !important;
+        }
         div {
-          margin: 10px 10px 0 0;
+          margin: 7px 10px 0 0;
           p {
-            font-size: 11px;
+            font-size: 15px;
             margin-right: 10px;
           }
           span {
-            font-size: 6px;
-            margin-top: 5px;
+            font-size: 11px;
+            margin-top: 3px;
           }
         }
       }
@@ -544,11 +544,11 @@
     &_main_button {
       margin: 50px auto 70px;
       button {
-        padding: 4px 0;
+        padding: 7px 0;
       }
       .general_button_styles {
         & > div {
-          width: 10px;
+          width: 15px;
           height: 2px;
         }
       }
@@ -556,13 +556,13 @@
         margin-right: 15px;
   
         button {
-          font-size: 7px !important;
-          width: 83px;
+          font-size: 11px !important;
+          width: 120px;
         }
       }
   
       .visit_website {
-        font-size: 7px;
+        font-size: 11px;
       }
   
       a {

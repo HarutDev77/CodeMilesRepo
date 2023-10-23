@@ -57,13 +57,21 @@
     .button_leave {
       width: 213px;
     }
+   
+    button:disabled{
+      background-color: grey;
+      color: black;
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
 
     .general_button_styles {
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
       & > div {
-        background-color: $main-title-color;
+        background-color: grey;
+        opacity: 0.5;
         width: 27px;
         height: 4px;
       }
@@ -300,7 +308,6 @@
   
       .general_button_styles {
         & > div {
-          background-color: $main-title-color;
           width: 24px;
         }
       }
@@ -392,7 +399,6 @@
   
       .general_button_styles {
         & > div {
-          background-color: $main-title-color;
           width: 20px;
         }
       }
@@ -483,7 +489,6 @@
   
       .general_button_styles {
         & > div {
-          background-color: $main-title-color;
           width: 17px;
         }
       }
@@ -535,9 +540,9 @@
   }
   
   .section_contact_us_code_miles_logo_container {
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     h4 {
-      margin-top: 10px;
+      margin-top: 5px;
       font-size: 10px;
     }
   }
