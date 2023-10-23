@@ -65,4 +65,4 @@ document.addEventListener("click", (e) => {
   }
 });
 
-console.log('testing');
+alert('test');
