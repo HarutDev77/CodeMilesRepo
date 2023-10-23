@@ -819,8 +819,9 @@
   display: flex;
   margin-bottom: 77px;
 }
-.works_main_section_title_box_last_container_technologies_box {
+.works_main_section_title_box_last_container .works_main_section_title_box_last_container_technologies_box {
   flex-wrap: wrap;
+  margin-top: 0;
 }
 .works_main_section_title_box_last_container div {
   display: flex;
@@ -1137,6 +1138,7 @@
   }
   .works_main_section_title_box_last_container {
     margin-bottom: 40px;
+    flex-direction: column;
   }
   .works_main_section_title_box_last_container div {
     margin: 20px 15px 0 0;
