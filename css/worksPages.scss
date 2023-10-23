@@ -46,8 +46,9 @@
     &_last_container {
       display: flex;
       margin-bottom: 77px;
-      &_technologies_box{
+     & &_technologies_box{
         flex-wrap: wrap;
+        margin-top: 0;
       }
       div {
         display: flex;
@@ -414,6 +415,7 @@
       }
       &_last_container {
         margin-bottom: 40px;
+        flex-direction: column;
         div {
           margin: 20px 15px 0 0;
           p {
