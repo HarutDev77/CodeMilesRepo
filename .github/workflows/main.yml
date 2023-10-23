@@ -19,5 +19,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /home/a/armrisch34/codemiles/public_html/
-            bash deploy.sh
+            bash /home/a/armrisch34/codemiles/public_html/deploy.sh
