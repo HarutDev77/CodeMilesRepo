@@ -64,5 +64,3 @@ document.addEventListener("click", (e) => {
     toggle = !toggle;
   }
 });
-
-console.log("testing autodeployment");
