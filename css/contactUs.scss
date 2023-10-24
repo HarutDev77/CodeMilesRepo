@@ -1,6 +1,6 @@
 .section_contact_us {
   width: 90%;
-  margin: 90px auto;
+  margin: 90px auto 130px;
   padding-top: 35px;
   &_h2 {
     font-size: 72px;
@@ -11,7 +11,7 @@
   }
   &_main_container {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     & a {
       text-decoration: none;
       color: $main-title-color;
@@ -58,19 +58,19 @@
       width: 213px;
     }
    
-    button:disabled{
-      background-color: grey;
-      color: black;
-      cursor: not-allowed;
-      opacity: 0.5;
-    }
+    // button:disabled{
+    //   background-color: grey;
+    //   color: black;
+    //   cursor: not-allowed;
+    //   opacity: 0.5;
+    // }
 
     .general_button_styles {
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
       & > div {
-        background-color: grey;
+        background-color: $main-title-color;
         opacity: 0.5;
         width: 27px;
         height: 4px;
