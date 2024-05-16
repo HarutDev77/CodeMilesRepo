@@ -1639,6 +1639,9 @@
   }
 }
 @media (max-width: 1025px) {
+  .menu_cont {
+    margin-top: 23px;
+  }
   .menu_cont_menu_icon_container {
     bottom: 42px;
     right: 25px;
@@ -1748,6 +1751,9 @@
     height: 33px;
     margin: 27px 0;
   }
+  .menu_cont {
+    margin-top: 23px;
+  }
   .menu_cont_menu_icon_container {
     bottom: 32px;
     right: 25px;
@@ -1808,6 +1814,9 @@
     width: 130px;
     height: 23px;
     margin: 17px 0;
+  }
+  .menu_cont {
+    margin-top: 23px;
   }
   .menu_cont_menu_icon_container {
     bottom: 19px;
