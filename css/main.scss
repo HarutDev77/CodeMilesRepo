@@ -398,6 +398,7 @@
 
 @media (max-width: 1025px){
   .menu_cont {
+    margin-top: 23px;
       &_menu_icon_container{
         bottom: 42px;
         right: 25px;
@@ -516,6 +517,7 @@
     }
   }
   .menu_cont {
+    margin-top: 23px;
     &_menu_icon_container{
       bottom: 32px;
       right: 25px;
@@ -591,6 +593,8 @@
     }
   }
   .menu_cont{
+    margin-top: 20px;
+    padding-right: 70px;
       &_menu_icon_container{
         bottom: 19px;
         right: 17px;
