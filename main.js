@@ -8,12 +8,14 @@ const LongLIne = document.querySelectorAll("#LongLine");
 const mobMenufirstDiv = document.querySelector(".identifierFirstDiv");
 const mobMenuSecondDiv = document.querySelector(".identifierSecondDiv");
 const mobMenuThirdDiv = document.querySelector(".identifierThirdDiv");
-const copyright = document.querySelector("#copyright");
+const copyrights = document.querySelectorAll(".copyright");
 
 const specificDate = new Date();
 const year = specificDate.getFullYear();
 
-copyright.innerText = `© ${year} Code Miles LLC. All rights reserved.`
+copyrights.forEach(copyright => {
+  copyright.innerText = `© ${year} Code Miles LLC. All rights reserved.`
+});
 
 buttonLeaveRequest !== null
   ? buttonLeaveRequest.addEventListener("click", toggleFeedBackForm)
