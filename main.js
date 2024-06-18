@@ -8,6 +8,16 @@ const LongLIne = document.querySelectorAll("#LongLine");
 const mobMenufirstDiv = document.querySelector(".identifierFirstDiv");
 const mobMenuSecondDiv = document.querySelector(".identifierSecondDiv");
 const mobMenuThirdDiv = document.querySelector(".identifierThirdDiv");
+const copyrights = document.querySelectorAll(".copyright");
+
+const specificDate = new Date();
+const year = specificDate.getFullYear();
+
+copyrights.forEach(copyright => {
+  copyright.innerText = `© ${year} ООО «Код Майлз». Все права защищены.`
+})
+
+
 
 buttonLeaveRequest !== null
   ? buttonLeaveRequest.addEventListener("click", toggleFeedBackForm)
